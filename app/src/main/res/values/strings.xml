@@ -37,5 +37,8 @@
     <string name="connected">已连接</string>
     <string name="disconnect">断开连接</string>
     <string name="enter">进入操作</string>
-
+    <string name="main_tab0">首页</string>
+    <string name="main_tab1">购物车</string>
+    <string name="main_tab2">微赚中心</string>
+    <string name="main_tab3">个人中心</string>
 </resources>
