@@ -12,7 +12,7 @@ import butterknife.ButterKnife;
 public class MineFragment extends BaseFragment {
     @Override
     public View getLayout(LayoutInflater inflater) {
-        View rootView = inflater.inflate(R.layout.fragment_shop, null);
+        View rootView = inflater.inflate(R.layout.fragment_mine, null);
         return rootView;
     }
 

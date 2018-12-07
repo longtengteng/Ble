@@ -5,6 +5,9 @@ import android.support.v4.content.ContextCompat
 import android.support.v4.view.ViewPager
 import com.clj.blesample.R.id.tab0
 import com.clj.blesample.base.BaseActivity
+import com.clj.blesample.ui.history.HistoryFragment
+import com.clj.blesample.ui.mine.MineFragment
+import com.clj.blesample.ui.time.TimeFragment
 import com.clj.blesample.util.PermissionConstants
 import com.clj.blesample.util.PermissionUtils
 import com.clj.blesample.util.ToastUtils
@@ -15,9 +18,9 @@ import kotlinx.android.synthetic.main.activity_bmain.*
 class BMainActivity : BaseActivity() {
     private var mTabButtons: Array<NativeTabButton>? = null
     private var mFragments: Array<Fragment>? = null
-    private var title = intArrayOf(R.string.main_tab0, R.string.main_tab1, R.string.main_tab2, R.string.main_tab3)
-    private var checkImage = intArrayOf(R.mipmap.logo, R.mipmap.logo, R.mipmap.logo, R.mipmap.logo)
-    private var unCheckImage = intArrayOf(R.mipmap.logo, R.mipmap.logo, R.mipmap.logo, R.mipmap.logo)
+    private var title = intArrayOf(R.string.main_tab0, R.string.main_tab1, R.string.main_tab2)
+    private var checkImage = intArrayOf(R.mipmap.logo, R.mipmap.logo, R.mipmap.logo)
+    private var unCheckImage = intArrayOf(R.mipmap.logo, R.mipmap.logo, R.mipmap.logo)
     private var adapter: CustomFragmentPagerAdapter? = null
 
     override fun loadViewLayout() {
@@ -47,7 +50,7 @@ class BMainActivity : BaseActivity() {
     }
 
     fun initTab() {
-        mTabButtons = arrayOf(tab0, tab1, tab2, tab3)
+        mTabButtons = arrayOf(tab0, tab1, tab2)
         for (i in mTabButtons!!.indices) {
             mTabButtons!![i].setTitle(getString(title[i]))
             mTabButtons!![i].setIndex(i)
@@ -59,7 +62,7 @@ class BMainActivity : BaseActivity() {
     }
 
     fun initFragment() {
-        mFragments = arrayOf(HomeFragment(), CartFragment(), MicroEarnCenterFragment(), MineFragment())
+        mFragments = arrayOf(HistoryFragment(), TimeFragment(), MineFragment())
         adapter = CustomFragmentPagerAdapter(mFragments, supportFragmentManager)
         sp_main.adapter = adapter
         sp_main.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {

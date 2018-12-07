@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1DE9B6</color>
-    <color name="colorPrimaryDark">#1DE9B6</color>
+    <color name="colorPrimary">#39B4FA</color>
+    <color name="colorPrimaryDark">#39B4FA</color>
     <color name="colorAccent">#FF5722</color>
     <color name="white">#ffffff</color>
     <color name="color_71">#717171</color>
     <color name="color_73">#737373</color>
+    <color name="color_e9">#E9E9E9</color> <!-- 分割线颜色-->
     <color name="color_e2">#E2E2E2</color>
     <color name="color_e0">#2974E0</color>
     <color name="color_f2">#F2F2F2</color>
     <color name="color_f5">#F5F5F5</color>
     <color name="color_f7">#F7F7F7</color>
     <color name="color_6d">#F56D6D</color>
+    <color name="color_fa">#39B4FA</color>
     <color name="color_5e">#FF655E</color>
     <color name="color_0E">#FBD70E</color>
     <color name="color_5d">#FF5D5D</color>
