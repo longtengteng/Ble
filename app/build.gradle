@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.clj.blesample"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 232
         versionName "2.3.2"
@@ -17,6 +17,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -29,11 +33,21 @@ dependencies {
     //首先引入gson库
     compile 'com.google.code.gson:gson:2.8.1'
     compile 'com.android.support:recyclerview-v7:27.1.1'
-//butterknife
+    //butterknife
     implementation 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
+    //网络请求框架
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.lzy.net:okrx2:2.0.2'
+    implementation 'com.lzy.net:okserver:2.0.5'
+    //json解析
+    implementation 'com.alibaba:fastjson:1.2.17'
+    implementation 'com.google.code.gson:gson:2.5'
+    //弹出框
+    implementation 'com.mylhyl:circleDialog:2.1.6'
+    implementation 'com.github.dfqin:grantor:2.3.1'
+    implementation 'com.edmodo:cropper:1.0.1'
 }
 repositories {
     mavenCentral()

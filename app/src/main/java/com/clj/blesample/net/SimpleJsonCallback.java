@@ -5,10 +5,10 @@ import android.content.Context;
 import android.view.View;
 import android.view.Window;
 
+import com.clj.blesample.R;
+import com.clj.blesample.util.LogUtils;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
-import com.liuniukeji.singemall.R;
-import com.liuniukeji.singemall.util.utilcode.LogUtils;
 import com.lzy.okgo.callback.AbsCallback;
 import com.lzy.okgo.exception.HttpException;
 import com.lzy.okgo.exception.StorageException;
@@ -137,7 +137,6 @@ public class SimpleJsonCallback<T> extends AbsCallback<T> {
             String message=exception.getMessage();
             LogUtils.e(message);
         }
-
     }
 
     @Override

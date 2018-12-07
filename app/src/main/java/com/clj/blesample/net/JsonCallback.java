@@ -9,13 +9,12 @@ import android.view.Window;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.clj.blesample.MainActivity;
+import com.clj.blesample.R;
+import com.clj.blesample.util.LogUtils;
+import com.clj.blesample.util.ToastUtils;
+import com.clj.blesample.util.Utils;
 import com.google.gson.Gson;
-import com.liuniukeji.singemall.R;
-import com.liuniukeji.singemall.ui.account.LoginAndRegisterActivity;
-import com.liuniukeji.singemall.ui.main.MainActivity;
-import com.liuniukeji.singemall.util.utilcode.LogUtils;
-import com.liuniukeji.singemall.util.utilcode.ToastUtils;
-import com.liuniukeji.singemall.util.utilcode.Utils;
 import com.lzy.okgo.callback.AbsCallback;
 import com.lzy.okgo.exception.HttpException;
 import com.lzy.okgo.exception.StorageException;
@@ -202,19 +201,7 @@ public class JsonCallback<T> extends AbsCallback<T> {
                     }
                     LazyResponse lazyResponse = gson.fromJson(mResponse, type);
                     return (T) lazyResponse;
-                } else if (code == 2) {
-                    Intent intent = new Intent(Utils.getApp(), MainActivity.class);
-                    intent.putExtra("isLogin", true);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    Utils.getApp().startActivity(intent);
-                    throw new IllegalStateException(JSON.parseObject(mResponse).getString("info"));
-                } else if (code == -1) {
-                    Intent intent = new Intent(Utils.getApp(), LoginAndRegisterActivity.class);
-                    intent.putExtra("isLogin", true);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    Utils.getApp().startActivity(intent);
-                    throw new IllegalStateException(JSON.parseObject(mResponse).getString("info"));
-                } else {
+                }  else {
                     throw new IllegalStateException(JSON.parseObject(mResponse).getString("info"));
                 }
             }
