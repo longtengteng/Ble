@@ -9,7 +9,7 @@ import com.clj.blesample.base.BaseFragment;
 public class HistoryFragment extends BaseFragment{
     @Override
     public View getLayout(LayoutInflater inflater) {
-        View rootView = inflater.inflate(R.layout.fragment_mine, null);
+        View rootView = inflater.inflate(R.layout.fragment_history, null);
         return rootView;
     }
 
@@ -17,4 +17,5 @@ public class HistoryFragment extends BaseFragment{
     protected void processLogic() {
 
     }
+
 }

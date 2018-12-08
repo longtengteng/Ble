@@ -38,8 +38,6 @@ class BMainActivity : BaseActivity() {
                 }
                 .callback(object : PermissionUtils.FullCallback {
                     override fun onGranted(permissionsGranted: MutableList<String>?) {
-                        /* PgyUpdateManager.Builder()
-                                 .register()*/
                     }
 
                     override fun onDenied(permissionsDeniedForever: MutableList<String>?, permissionsDenied: MutableList<String>?) {
@@ -62,7 +60,7 @@ class BMainActivity : BaseActivity() {
     }
 
     fun initFragment() {
-        mFragments = arrayOf(HistoryFragment(), TimeFragment(), MineFragment())
+        mFragments = arrayOf(HistoryFragment(), HistoryFragment(), MineFragment())
         adapter = CustomFragmentPagerAdapter(mFragments, supportFragmentManager)
         sp_main.adapter = adapter
         sp_main.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {

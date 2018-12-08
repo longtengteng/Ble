@@ -66,17 +66,5 @@
                 android:visibility="visible" />
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.clj.blesample.widget.NativeTabButton
-                android:id="@+id/tab3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:visibility="visible" />
-        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
