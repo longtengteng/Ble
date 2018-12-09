@@ -60,7 +60,7 @@ class BMainActivity : BaseActivity() {
     }
 
     fun initFragment() {
-        mFragments = arrayOf(HistoryFragment(), HistoryFragment(), MineFragment())
+        mFragments = arrayOf(TimeFragment(), HistoryFragment(), MineFragment())
         adapter = CustomFragmentPagerAdapter(mFragments, supportFragmentManager)
         sp_main.adapter = adapter
         sp_main.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
