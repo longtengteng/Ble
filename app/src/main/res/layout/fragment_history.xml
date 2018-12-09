@@ -69,5 +69,69 @@
         android:textColor="@color/color_71"
         android:textSize="18sp" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.tu.circlelibrary.CirclePercentBar
+            android:id="@+id/circlepercent"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:arcColor="@color/colorPrimary"
+            app:arcEndColor="@android:color/holo_green_light"
+            app:arcStartColor="@android:color/holo_blue_dark"
+            app:arcWidth="10dp" />
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/temperature" />
+
+            <TextView
+                android:id="@+id/tv_big_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="36.6℃"
+                android:textColor="@color/color_71"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_electric"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/add" />
+
+                <TextView
+                    android:id="@+id/tv_electric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="56%"
+                    android:textColor="@color/color_ce"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
 
 </LinearLayout>

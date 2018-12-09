@@ -6,6 +6,9 @@
     <color name="white">#ffffff</color>
     <color name="color_71">#717171</color>
     <color name="color_73">#737373</color>
+    <color name="color_fc">#E2F8FC</color>
+    <color name="color_ff">#E8FCFF</color>
+    <color name="color_ce">#5DB5CE</color>
     <color name="color_e9">#E9E9E9</color> <!-- 分割线颜色-->
     <color name="color_e2">#E2E2E2</color>
     <color name="color_e0">#2974E0</color>

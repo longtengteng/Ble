@@ -48,6 +48,8 @@ dependencies {
     implementation 'com.mylhyl:circleDialog:2.1.6'
     implementation 'com.github.dfqin:grantor:2.3.1'
     implementation 'com.edmodo:cropper:1.0.1'
+
+    implementation 'com.github.gittjy:CirclePercentBar:1.0.1'
 }
 repositories {
     mavenCentral()
