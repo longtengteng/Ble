@@ -39,6 +39,10 @@
         <activity android:name=".ui.history.AddHistoryActivity" />
         <activity android:name=".ui.history.BabyInfoActivity" />
         <activity android:name=".ui.history.AddDetailActivity" />
+        <activity android:name=".ui.history.BabyInfoDetailActivity" />
+        <activity android:name=".ui.history.AddParentActivity" />
+        <activity android:name=".ui.time.SettingActivity" />
+        <activity android:name=".ui.history.DrugHistoryActivity" />
 
     </application>
 

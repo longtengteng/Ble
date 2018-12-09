@@ -3,11 +3,14 @@ package com.clj.blesample.ui.history;
 import com.clj.blesample.R;
 import com.clj.blesample.base.BaseActivity;
 
-/*增加宝宝的详细信息*/
-public class AddDetailActivity extends BaseActivity {
+/*
+ *宝宝信息详情
+ * */
+public class BabyInfoDetailActivity extends BaseActivity {
+
     @Override
     protected void loadViewLayout() {
-        setContentView(R.layout.activity_adddetail);
+        setContentView(R.layout.activity_babyinfodetail);
     }
 
     @Override
