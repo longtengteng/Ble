@@ -13,6 +13,7 @@ import com.android.tu.circlelibrary.CirclePercentBar;
 import com.clj.blesample.MainActivity;
 import com.clj.blesample.R;
 import com.clj.blesample.base.BaseFragment;
+import com.clj.blesample.util.ImageLoader;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -82,8 +83,11 @@ public class HistoryFragment extends BaseFragment implements HistoryContract.Vie
 
     @Override
     public void index_noconnected(HistoryBean historyBean) {
+        ImageLoader.loadHead(context, ivHead, historyBean.getHeader_pic());
+        tvPhone.setText(historyBean.getName());
+        tvTime.setText(historyBean.getTime_str());
+        tvTemperature.setText(historyBean.getPower_num() + "");
 
-        
     }
 
     @Override

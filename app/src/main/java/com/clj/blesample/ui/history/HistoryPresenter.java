@@ -25,7 +25,7 @@ public class HistoryPresenter implements HistoryContract.Present {
     public void index_noconnected() {
         String token = MyApplication.getToken();
         HttpParams httpParams = new HttpParams();
-        httpParams.put("token", MyApplication.getInstance().getUser().getToken());
+        httpParams.put("token", "163975257174261269");
         OkGo.<LazyResponse<HistoryBean>>post(UrlUtils.index_noconnected).tag(context).params(httpParams).execute(new JsonCallback<LazyResponse<HistoryBean>>(context, false) {
             @Override
             public void onSuccess(Response<LazyResponse<HistoryBean>> response) {
