@@ -109,7 +109,7 @@ public class DeviceAdapter extends BaseAdapter {
             int rssi = bleDevice.getRssi();
             holder.txt_name.setText(name);
             holder.txt_mac.setText(mac);
-            holder.txt_rssi.setText(String.valueOf(rssi));
+            holder.txt_rssi.setText(String.valueOf(rssi));   //信号强度
             if (isConnected) {
                 holder.img_blue.setImageResource(R.mipmap.ic_blue_connected);
                 holder.txt_name.setTextColor(0xFF1DE9B6);

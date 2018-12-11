@@ -52,13 +52,15 @@
                 android:id="@+id/txt_rssi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:visibility="gone" />
 
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:layout_marginLeft="5dp"
-                android:src="@mipmap/ic_rssi" />
+                android:src="@mipmap/ic_rssi"
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/btn_connect"

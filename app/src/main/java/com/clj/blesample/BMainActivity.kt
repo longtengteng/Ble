@@ -19,15 +19,15 @@ class BMainActivity : BaseActivity() {
     private var mTabButtons: Array<NativeTabButton>? = null
     private var mFragments: Array<Fragment>? = null
     private var title = intArrayOf(R.string.main_tab0, R.string.main_tab1, R.string.main_tab2)
-    private var checkImage = intArrayOf(R.mipmap.logo, R.mipmap.logo, R.mipmap.logo)
-    private var unCheckImage = intArrayOf(R.mipmap.logo, R.mipmap.logo, R.mipmap.logo)
+    private var checkImage = intArrayOf(R.mipmap.tab11, R.mipmap.tab22, R.mipmap.tab33)
+    private var unCheckImage = intArrayOf(R.mipmap.tab1, R.mipmap.tab2, R.mipmap.tab3)
     private var adapter: CustomFragmentPagerAdapter? = null
 
     override fun loadViewLayout() {
         setContentView(R.layout.activity_bmain)
         initTab()
         initFragment()
-        setFragmentShow(0)
+        setFragmentShow(1)
     }
 
     override fun processLogic() {
